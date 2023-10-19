@@ -3,6 +3,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class GuessingGame
 {
 	private int upperBound;
