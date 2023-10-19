@@ -1,3 +1,7 @@
+/**
+ * The MinMax class is a utility class that calculates the values of function
+ * Y(x) and G(x) for a given range of x values.
+ */
 public class MinMax {
     public static void main(String[] args){
         double x=-1.01;
