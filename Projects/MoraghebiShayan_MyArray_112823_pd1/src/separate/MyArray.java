@@ -52,4 +52,31 @@ public class MyArray {
         sum /=10000;
         return sum;
     }
+
+    public static int withE(String[] arr){
+        int eCount = 0;
+        for(String str:arr){
+            for(int i = 0; i<str.length();i++){
+                if(str.charAt(i)=='e'||str.charAt(i)=='E')
+                    eCount++;
+            }
+        }
+        return eCount;
+    }
+    public static double[] quadF(int[] arr){
+        if(arr[1]*arr[1]-4*arr[0]*arr[2]<0) {
+            double[] roots = new double[3];
+            for(int i=0; i<3;i++)
+                roots[i]=arr[i];
+            return roots;
+        }
+        double[] roots = new double[2];
+        roots[0]=(-((double)arr[1])-Math.pow(((double)(arr[1]*arr[1]))-(4*arr[0]*arr[1]),0.5))/2*arr[0];
+        roots[1]=(-((double)arr[1])+Math.pow(((double)(arr[1]*arr[1]))-(4*arr[0]*arr[1]),0.5))/2*arr[0];
+        roots[0]=(int)roots[0]*1000;
+        roots[0]=roots[0]/1000;
+        roots[1]=(int)roots[1]*1000;
+        roots[1]=roots[1]/1000;
+        return roots;
+    }
 }

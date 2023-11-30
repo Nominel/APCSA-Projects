@@ -11,5 +11,12 @@ public class MyArrayRunner {
         System.out.println(MyArray.average(new double[] {1.5, -3.5, 8, 7, 0}));
         System.out.println(MyArray.average(new double[] {-5, -7.5}));
         System.out.println(MyArray.average(new double[] {0.25, 0, 7.5, 4.13, 2.15, 0.03, 3, -6 }));
+        System.out.println(MyArray.withE(new String[] {"cvhs", "rhino", "hello"}));
+        System.out.println(MyArray.withE(new String[] {"err", "accept", "new"}));
+        System.out.println(MyArray.withE(new String[] {"one"}));
+        System.out.println(MyArray.withE(new String[] {"two"}));
+        System.out.println(Arrays.toString(MyArray.quadF(new int[] {2, -5, 1})));
+        System.out.println(Arrays.toString(MyArray.quadF(new int[] {1, -2, 3})));
+        System.out.println(Arrays.toString(MyArray.quadF(new int[] {2, 5, 6})));
     }
 }
