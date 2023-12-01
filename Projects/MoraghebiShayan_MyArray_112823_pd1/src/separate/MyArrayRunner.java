@@ -21,5 +21,14 @@ public class MyArrayRunner {
         System.out.println(Arrays.toString(MyArray.notInArray1(new int[] {1,2,3,4,5,6,7,8,9},new int[] {3,12,-9,5,0})));
         System.out.println(Arrays.toString(MyArray.notInArray1(new int[] {6,7,8,9},new int[] {30})));
         System.out.println(Arrays.toString(MyArray.notInArray1(new int[] {1,2,3,4},new int[] {1,2,3,4})));
+        int[] arr1 = {3,12,-9,5,0};
+        MyArray.bubbleSort(arr1);
+        System.out.println(Arrays.toString(arr1));
+        int[] arr2 = {22,-12,65,2};
+        MyArray.bubbleSort(arr2);
+        System.out.println(Arrays.toString(arr2));
+        int[] arr3 = {-993,3749,545,210,190,-1};
+        MyArray.bubbleSort(arr3);
+        System.out.println(Arrays.toString(arr3));
     }
 }

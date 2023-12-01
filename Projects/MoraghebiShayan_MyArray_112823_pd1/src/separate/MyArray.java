@@ -108,18 +108,24 @@ public class MyArray {
                 index++;
             }
         }
+        bubbleSort(result);
+        if(count==0)
+            return null;
+        return result;
+    }
+    public static void bubbleSort(int[] arr){
         int i, j, temp;
-        int n = count;
+        int n = arr.length;
         boolean swapped;
         for (i = 0; i < n - 1; i++) {
             swapped = false;
             for (j = 0; j < n - i - 1; j++) {
-                if (result[j] > result[j + 1]) {
+                if (arr[j] > arr[j + 1]) {
 
                     // Swap arr[j] and arr[j+1]
-                    temp = result[j];
-                    result[j] = result[j + 1];
-                    result[j + 1] = temp;
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                     swapped = true;
                 }
             }
@@ -129,8 +135,5 @@ public class MyArray {
             if (!swapped)
                 break;
         }
-        if(count==0)
-            return null;
-        return result;
     }
 }
