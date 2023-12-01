@@ -79,4 +79,58 @@ public class MyArray {
         roots[1]=roots[1]/1000;
         return roots;
     }
+
+    public static int[] notInArray1(int[] arr1, int[] arr2){
+        int count = 0;
+        for(int val2:arr2){
+            boolean notExists = true;
+            for(int val1:arr1){
+                if (val2 == val1) {
+                    notExists = false;
+                    break;
+                }
+            }
+            if(notExists)
+                count++;
+        }
+        int index = 0;
+        int[] result = new int[count];
+        for (int k : arr2) {
+            boolean notExists = true;
+            for (int val1 : arr1) {
+                if (k == val1) {
+                    notExists = false;
+                    break;
+                }
+            }
+            if (notExists) {
+                result[index] = k;
+                index++;
+            }
+        }
+        int i, j, temp;
+        int n = count;
+        boolean swapped;
+        for (i = 0; i < n - 1; i++) {
+            swapped = false;
+            for (j = 0; j < n - i - 1; j++) {
+                if (result[j] > result[j + 1]) {
+
+                    // Swap arr[j] and arr[j+1]
+                    temp = result[j];
+                    result[j] = result[j + 1];
+                    result[j + 1] = temp;
+                    swapped = true;
+                }
+            }
+
+            // If no two elements were
+            // swapped by inner loop, then break
+            if (!swapped)
+                break;
+        }
+        if(count==0)
+            return null;
+        return result;
+    }
 }

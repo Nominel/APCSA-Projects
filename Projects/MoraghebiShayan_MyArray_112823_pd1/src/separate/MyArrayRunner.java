@@ -18,5 +18,8 @@ public class MyArrayRunner {
         System.out.println(Arrays.toString(MyArray.quadF(new int[] {2, -5, 1})));
         System.out.println(Arrays.toString(MyArray.quadF(new int[] {1, -2, 3})));
         System.out.println(Arrays.toString(MyArray.quadF(new int[] {2, 5, 6})));
+        System.out.println(Arrays.toString(MyArray.notInArray1(new int[] {1,2,3,4,5,6,7,8,9},new int[] {3,12,-9,5,0})));
+        System.out.println(Arrays.toString(MyArray.notInArray1(new int[] {6,7,8,9},new int[] {30})));
+        System.out.println(Arrays.toString(MyArray.notInArray1(new int[] {1,2,3,4},new int[] {1,2,3,4})));
     }
 }
