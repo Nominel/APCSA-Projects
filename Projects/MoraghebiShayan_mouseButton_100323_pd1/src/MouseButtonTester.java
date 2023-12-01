@@ -46,7 +46,7 @@ public class MouseButtonTester extends JFrame implements MouseListener
             throw new RuntimeException(e);
         }
     }
-    File inputFile3 = new File("caolin.png");  // The file must be in project (root) directory
+    File inputFile3 = new File("caoilin.png");  // The file must be in project (root) directory
 
     BufferedImage bufferedImage3;
 
