@@ -1,6 +1,5 @@
 package word;
 
-import static java.lang.System.*;
 
 public class Word
 {
