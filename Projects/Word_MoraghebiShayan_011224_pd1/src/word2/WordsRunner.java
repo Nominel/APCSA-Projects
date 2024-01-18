@@ -9,6 +9,7 @@ public class WordsRunner
 	public static void main(String[] args)
 	{
                 Scanner scan = new Scanner(System.in);
+                out.println("Please enter your array with the elements seperated by , ex: one, two, three, four");
 		String[] wrds = scan.nextLine().split(", ");
 		Words test = new Words( wrds );
 		out.println(test);
