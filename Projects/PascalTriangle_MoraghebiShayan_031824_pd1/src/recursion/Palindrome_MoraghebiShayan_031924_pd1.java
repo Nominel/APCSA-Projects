@@ -9,6 +9,11 @@ public class Palindrome_MoraghebiShayan_031924_pd1 {
 		System.out.println(isPalindrome("aqubcdfghbcdaqu", 0, 14, 2));
 		System.out.println(isPalindrome("abakadakadaba",0,12,1));
 		System.out.println(isPalindrome("abcdexxxxxxxxxxxxxxabcde",0,23,5));
+		System.out.println(isPalindrome("abcdexxxxxxxxxxxxxxabcde",0,23,3));
+		System.out.println(isPalindrome("abcdefxxxxxxxxxxxxabcdef",0,23,6));
+		System.out.println(isPalindrome("abcdefxxxxxxxxxxxxabcdef",0,23,3));
+		System.out.println(isPalindrome("abcdefgxxxxxxxxxxabcdefg",0,23,7));
+		System.out.println(isPalindrome("abcdefgxxxxxxxxxxabcdefg",0,23,3));
 	}
 
 	public static boolean isPalindrome(String str, int start, int end, int n){
