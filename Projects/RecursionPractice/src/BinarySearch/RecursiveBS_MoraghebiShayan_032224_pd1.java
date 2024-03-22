@@ -13,9 +13,7 @@ public class RecursiveBS_MoraghebiShayan_032224_pd1 {
 		System.out.println(binarySearch(b,20));
 	}
 	public static int binarySearch(int[] arr, int target){
-		if(target>arr[arr.length-1]||target<arr[0])
-			return -1;
-		return binarySearch(arr,target,arr.length,0);
+		return binarySearch(arr,target,arr.length-1,0);
 	}
 	public static int binarySearch(int[] arr, int target, int hi, int lo){
 		if(lo<=hi){
