@@ -7,11 +7,11 @@ import javax.swing.*;
 
 public class MyButton extends JFrame implements ActionListener {
 
-	JFrame frame;
-	JButton red;
-	JButton green;
-	JButton blue;
-	JButton white;
+	private JFrame frame;
+	private JButton red;
+	private JButton green;
+	private JButton blue;
+	private JButton white;
 
 	public MyButton() {
 		Font font = new Font(Font.SANS_SERIF, Font.BOLD, 9);
