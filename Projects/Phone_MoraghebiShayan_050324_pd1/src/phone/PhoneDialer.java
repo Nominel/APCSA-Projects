@@ -20,6 +20,7 @@ public class PhoneDialer implements ActionListener {
 	private JButton dash;
 	private JButton dial;
 	private String number;
+	private JLabel numberLabel;
 
 	public PhoneDialer() {
 		number = "";
@@ -35,7 +36,7 @@ public class PhoneDialer implements ActionListener {
 
 		JPanel numberPanel = new JPanel();
 		numberPanel.setLayout(new FlowLayout());
-		JLabel numberLabel = new JLabel("Enter number to dial");
+		numberLabel = new JLabel("Enter number to dial: \n"+number);
 		numberPanel.add(numberLabel);
 		mainPanel.add(numberPanel);
 
@@ -96,36 +97,47 @@ public class PhoneDialer implements ActionListener {
 		}
 		else if(e.getSource() == one) {
 			number+="1";
+			numberLabel.setText("Enter number to dial: \n"+number);
 		}
 		else if(e.getSource() == two) {
 			number+="2";
+			numberLabel.setText("Enter number to dial: \n"+number);
 		}
 		else if(e.getSource() == three) {
 			number+="3";
+			numberLabel.setText("Enter number to dial: \n"+number);
 		}
 		else if(e.getSource() == four) {
 			number+="4";
+			numberLabel.setText("Enter number to dial: \n"+number);
 		}
 		else if(e.getSource() == five) {
 			number+="5";
+			numberLabel.setText("Enter number to dial: \n"+number);
 		}
 		else if(e.getSource() == six) {
-			number+="6";
+			number += "6";
+			numberLabel.setText("Enter number to dial: \n" + number);
 		}
 		else if(e.getSource() == seven) {
-			number+="7";
+			number += "7";
+			numberLabel.setText("Enter number to dial: \n" + number);
 		}
 		else if(e.getSource() == eight) {
-			number+="8";
+			number += "8";
+			numberLabel.setText("Enter number to dial: \n" + number);
 		}
 		else if(e.getSource() == nine) {
-			number+="9";
+			number += "9";
+			numberLabel.setText("Enter number to dial: \n" + number);
 		}
 		else if(e.getSource() == dash) {
-			number+="-";
+			number += "-";
+			numberLabel.setText("Enter number to dial: \n" + number);
 		}
 		else if(e.getSource() == zero) {
-			number+="0";
+			number += "0";
+			numberLabel.setText("Enter number to dial: \n" + number);
 		}
 	}
 }
