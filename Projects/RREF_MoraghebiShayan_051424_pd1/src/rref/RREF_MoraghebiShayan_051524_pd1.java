@@ -2,11 +2,33 @@ package rref;
 
 import java.util.Arrays;
 
-public class RREF {
+public class RREF_MoraghebiShayan_051524_pd1 {
 
 	public static void main(String[] args) {
-		double[][] d1 = {{3,2,-1,10},{4,-3,4,-14},{5,1,2,1}};
+		double[][] d1 = {{-1275,150,300,0,0,0,0,36},{150,-1500,825,150,0,0,0,36},{300,825,-1575,225,150,150,0,-54},{0,150,225,-1350,0,0,0,0},{0,0,150,0,-825,375,150,-27},{0,0,0,0,375,-2025,450,27},{0,0,0,0,150,450,-1425,45}};
+		System.out.println(Arrays.deepToString(d1));
 		System.out.println(Arrays.deepToString(rref(d1)));
+		double i1 = d1[0][7];
+		double i2 = d1[1][7];
+		double i3 = d1[2][7];
+		double i4 = d1[3][7];
+		double i5 = d1[4][7];
+		double i6 = d1[5][7];
+		double i7 = d1[6][7];
+		System.out.println(i1);
+		System.out.println(i2);
+		System.out.println(i3);
+		System.out.println(i4);
+		System.out.println(i5);
+		System.out.println(i6);
+		System.out.println(i7);
+		System.out.println(150*(i2-i1));
+		System.out.println(150*(i5-i3));
+		System.out.println(150*(-i1)+2*150*(-i3)+1.5*150*(-i3)+150*(i6-i3)+150*(i5-i3)+150*i5);
+		System.out.println(2*18+2.5*150*(i3-i2)+1.5*150*(i3-i4)+150*(i3-i5)+1.5*(-18)+150*(i6-i5));
+		System.out.println(-2*150*i3);
+		System.out.println(150*(i7-i5));
+		System.out.println(-150*i1-2*150*i3-1.5*150*i3-150*i6-1.5*150*i6-2*150*i6-2.5*150*i6-150*i7-1.5*150*i7-2*150*i7);
 	}
 
 	public static double[][] rref(double[][] matrix){
